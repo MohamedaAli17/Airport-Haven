@@ -36,3 +36,22 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/

@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+# Airport Haven
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Airport Haven is a comprehensive airport companion app designed to enhance the passenger experience by simplifying airport navigation and providing real-time information. From arrival to boarding, we make your airport journey smoother and more enjoyable.
 
-## Get started
+## Mobile App Features
 
-1. Install dependencies
+- **Real-time Flight Updates**: Stay informed about your flight status, gate changes, and boarding times
+- **Interactive Airport Map**: Navigate efficiently with detailed indoor maps and walking directions
+- **Food & Shopping Directory**: 
+  - Comprehensive listings of restaurants, cafes, and shops
+  - Filter by cuisine type, location, and ratings
+  - View menus, prices, and wait times
+- **Smart Recommendations**: Personalized suggestions based on your preferences and location
+- **Future Features**:
+  - Order-ahead functionality for food and retail
+  - Lounge access and booking
+  - Premium services and exclusive deals
 
-   ```bash
-   npm install
-   ```
+## Landing Page
 
-2. Start the app
+The `public` folder contains a responsive landing page showcasing the app's features and pricing plans:
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+public/
+├── index.html      # Home page with app overview
+├── features.html   # Detailed feature listings
+├── pricing.html    # Subscription plans
+├── faq.html        # Common questions
+├── styles.css      # Main stylesheet
+├── script.js       # Interactive elements
+└── assets/         # Images and resources
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Landing Page Features
+- Modern, responsive design with dark theme
+- Interactive features showcase
+- Tiered pricing plans (Free, Platinum, Elite)
+- Comprehensive FAQ section
+- Mobile-first approach
+- Smooth animations and transitions
 
-## Learn more
+## Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+### Mobile App
+The mobile app is currently in development. Stay tuned for:
+- App Store (iOS) release
+- Google Play Store (Android) release
+- Beta testing opportunities
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Landing Page
+1. Clone the repository
+2. Open any HTML file in a modern web browser
+3. No build process required - pure HTML, CSS, and JavaScript
 
-## Join the community
+## Technologies Used
 
-Join our community of developers creating universal apps.
+### Mobile App (Coming Soon)
+- React Native
+- Firebase Authentication
+- Real-time flight data APIs
+- Indoor mapping solutions
+- Payment processing integration
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Landing Page
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome Icons
+- Google Fonts (Inter)
+
+## Contributing
+
+We welcome contributions! Feel free to:
+- Submit bug reports
+- Propose new features
+- Submit pull requests
+- Provide feedback on user experience
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For support, feedback, or inquiries, please open an issue in this repository.

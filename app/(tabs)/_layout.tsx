@@ -1,9 +1,9 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
@@ -15,7 +15,7 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
+        headerShown: true,
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
         tabBarStyle: Platform.select({
@@ -30,14 +30,48 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons name="home" size={24} color={color} />,
+          headerTitle: 'Heathrow Airport Guide',
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="food"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Food',
+          tabBarIcon: ({ color }) => <Ionicons name="restaurant" size={24} color={color} />,
+          headerTitle: 'Restaurants & Cafes',
+        }}
+      />
+      <Tabs.Screen
+        name="shopping"
+        options={{
+          title: 'Shopping',
+          tabBarIcon: ({ color }) => <Ionicons name="cart" size={24} color={color} />,
+          headerTitle: 'Shops & Retail',
+        }}
+      />
+      <Tabs.Screen
+        name="lounges"
+        options={{
+          title: 'Lounges',
+          tabBarIcon: ({ color }) => <Ionicons name="business" size={24} color={color} />,
+          headerTitle: 'Airport Lounges',
+        }}
+      />
+      <Tabs.Screen
+        name="map"
+        options={{
+          title: 'Map',
+          tabBarIcon: ({ color }) => <Ionicons name="map" size={24} color={color} />,
+          headerTitle: 'Terminal Map',
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color }) => <Ionicons name="person" size={24} color={color} />,
+          headerTitle: 'My Profile',
         }}
       />
     </Tabs>
